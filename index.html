@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/style.css">
+  
+  
   
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
@@ -16,18 +20,70 @@
 </head>
 <body>
 
-  Features
-  Company
-  Careers
-  About
+  <nav class="navbar navbar-expand-lg navbar-light " >
+    <img  src="/images/Logo.png" class="logo mx-5"  alt="">
+    <div class="collapse navbar-collapse" id="mynav">
+      <ul class="navbar-nav list-unstyled my-3 my-md-0 ">
+        <li class="nav-item mx-1 dropdown"> 
+          <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Features</a>
+          <div class="dropdown-menu">
+            <a href="" class="dropdown-item">
+              <img class="mr-3" src="/images/icon-todo.svg" alt="">Todo List
+            </a>
+            <a href="" class="dropdown-item">
+              <img class="mr-3" src="/images/icon-calendar.svg" alt="">Calender
+            </a>
+            <a href="" class="dropdown-item">
+              <img class="mr-3" src="/images/icon-reminders.svg" alt="">Remainder
+            </a>
+            <a href="" class="dropdown-item">
+              <img class="mr-3" src="/images/icon-planning.svg" alt="">Planing
+            </a>
+          </div>
+        </li>
+        <li class="nav-item mx-1 dropdown"> 
+          <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Companies</a>
+          <div class="dropdown-menu">
+            <a href="" class="dropdown-item text-center">history</a>
+            <a href="" class="dropdown-item text-center">Our team</a>
+            <a href="" class="dropdown-item text-center">Blog</a>
+          </div>
+        </li>
+        <li class="nav-item mx-1"> <a href="" class="nav-link">Careers</a></li>
+        <li class="nav-item mx-1"> <a href="" class="nav-link">About</a></li>
+      </ul>
+    </div> 
+    <div class="collapse navbar-collapse navbar-light justify-content-end  mx-5">
+      <ul class="navbar-nav navbar-dark list-unstyled my-3 ">
+        <li class="nav-item mr-5 text-light"><a href="" class="text-muted text-decoration-none">Login</a></li>
+        <li class="nav-item mr-5 "><a href="" class="text-muted border rounded px-3 py-1 text-decoration-none ">Register</a></li>
+      </ul>
+    </div>
+   </nav>
+   <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <h1 class="display-3">Make remote work</h1>
+        <p>
+        Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.
+        </p>  
+      
+      </div>
+    </div>  
+    <div class="col-6">
+      <img src="/images/image-hero-desktop.png" class="hero">
+    </div>
+   </div>
+  
+ 
+  
+  
 
-  Login
-  Register
+  
+  
 
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
+  
 
   Learn more
   
@@ -35,5 +91,15 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+
+
+
+
+  <!-- script section -->
+  <script src="/design/scripts/jquery-3.3.1.slim.min.js"></script>
+  <script src="/design/scripts/bootstrap.min.js"></script>
+  <script src="/design/scripts/popper.min.js"></script>
+  <script src="/design/scripts/main.js"></script>
 </body>
 </html>
