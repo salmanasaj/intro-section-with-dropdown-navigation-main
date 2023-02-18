@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Epilogue">
   
   
   
@@ -21,8 +22,12 @@
 <body>
 
   <nav class="navbar navbar-expand-lg navbar-light " >
+      
+    <div class="nav-link" id="nav-links">
+      <li class="fa fa-times" onclick="hideMenu()"></li>
+    </div>
     <img  src="/images/Logo.png" class="logo mx-5"  alt="">
-    <div class="collapse navbar-collapse" id="mynav">
+    <div class=" nav-links collapse navbar-collapse" id="mynav">
       <ul class="navbar-nav list-unstyled my-3 my-md-0 ">
         <li class="nav-item mx-1 dropdown"> 
           <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Features</a>
@@ -41,8 +46,10 @@
             </a>
           </div>
         </li>
-        <li class="nav-item mx-1 dropdown"> 
-          <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Companies</a>
+        <li class="nav-item mx-1 btn-group"> 
+
+          
+          <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Companies<img src="/images/icon-arrow-up.svg" alt=""></a>
           <div class="dropdown-menu">
             <a href="" class="dropdown-item text-center">history</a>
             <a href="" class="dropdown-item text-center">Our team</a>
@@ -53,26 +60,38 @@
         <li class="nav-item mx-1"> <a href="" class="nav-link">About</a></li>
       </ul>
     </div> 
-    <div class="collapse navbar-collapse navbar-light justify-content-end  mx-5">
+    <div class="collapse navbar-collapse navbar-light justify-content-end  mx-5" id="mynav">
       <ul class="navbar-nav navbar-dark list-unstyled my-3 ">
         <li class="nav-item mr-5 text-light"><a href="" class="text-muted text-decoration-none">Login</a></li>
-        <li class="nav-item mr-5 "><a href="" class="text-muted border rounded px-3 py-1 text-decoration-none ">Register</a></li>
+        <li class="nav-item mr-5 "><a href="" class="text-muted border border-dark  rounded px-4 py-2 text-decoration-none ">Register</a></li>
       </ul>
     </div>
    </nav>
    <div class="container">
+  
+
     <div class="row">
-      <div class="col-6">
-        <h1 class="display-3">Make remote work</h1>
+      <div class="col-lg-6 col-md-6 col-xs-12 px-3 my-4 order-1 order-lg-0 ">
+        <h1 class="display-3 font-weight-bold">Make <br> remote work</h1>
         <p>
-        Get your team in sync, no matter your location. Streamline processes, 
-        create team rituals, and watch productivity soar.
+        Get your team in sync, no matter your location. <br>  Streamline processes, 
+        create team rituals, and <br>  watch  productivity soar.
         </p>  
+        <a class="btn border rounded my-5 px-4 py-2" type="button">Learn more</a>
+
+        <div class="justify-content ">
+          <img class="img" src="/images/client-maker.svg" alt="">
+          <img class="img" src="/images/client-audiophile.svg" alt="">
+          <img class="img" src="/images/client-meet.svg" alt="">
+          <img class="img" src="/images/client-databiz.svg" alt="">
+        
+        </div>
       
       </div>
-    </div>  
-    <div class="col-6">
-      <img src="/images/image-hero-desktop.png" class="hero">
+       
+      <div class="col-lg-6 col-xs-12 col-md-6f">
+        <img  src="/images/image-hero-desktop.png" class="w-100 h-75 order-0 order-lg-1  ml-lg-5 ">
+        </div>
     </div>
    </div>
   
@@ -85,7 +104,7 @@
 
   
 
-  Learn more
+  
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
@@ -101,5 +120,17 @@
   <script src="/design/scripts/bootstrap.min.js"></script>
   <script src="/design/scripts/popper.min.js"></script>
   <script src="/design/scripts/main.js"></script>
+
+  <script>
+    var navLinks = document.getElementById('navLink');
+    function showMenu(){
+      navLinks.style.right ="0";
+
+    } 
+    function hideMenu(){
+      navLinks.style.right ="-200px";
+
+    } 
+  </script>
 </body>
 </html>
